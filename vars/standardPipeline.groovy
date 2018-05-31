@@ -16,5 +16,5 @@ def deploy(url) {
 					bat "deploy-app.bat"
 	 
 	 // Clean the files after doing deployment
-	 bat 'rmdir "KitBasicoAutomApp-Ops"'
+	 bat 'rmdir -r "KitBasicoAutomApp-Ops"'
 }
