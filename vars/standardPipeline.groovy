@@ -15,6 +15,6 @@ def deploy(url) {
 					bat "deploy-bd.bat"
 					bat "deploy-app.bat"
 	 
-	 // Clean workspace after doing anything
-	 //deleteDir()
+	 // Clean the files after doing deployment
+	 bat 'rmdir "KitBasicoAutomApp-Ops"'
 }
