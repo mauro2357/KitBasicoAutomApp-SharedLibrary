@@ -12,8 +12,8 @@ def deploy(url) {
 						
      bat 'mkdir "KitBasicoAutomApp/build/libs/config"'
 					bat 'xcopy "KitBasicoAutomApp-Ops/config" "KitBasicoAutomApp/build/libs/config"'
-					bat "deploy-bd.bat"
-					bat "deploy-app.bat"
+					//bat "deploy-bd.bat"
+					//bat "deploy-app.bat"
 	 
 	 // Clean the files after doing deployment
 	 bat 'rmdir -r "KitBasicoAutomApp-Ops"'
