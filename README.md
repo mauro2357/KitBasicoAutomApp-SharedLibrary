@@ -1,0 +1,1 @@
+# KitBasicoAutomApp-SharedLibrary
