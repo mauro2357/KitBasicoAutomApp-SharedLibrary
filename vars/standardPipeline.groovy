@@ -1,3 +1,3 @@
 def deploy(url) {
-     echo "INFO: ${message}"
+     echo "INFO: ${url}"
 }
