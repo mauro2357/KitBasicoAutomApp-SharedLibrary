@@ -1,6 +1,12 @@
 def deploy(url) {
      echo "INFO: ${url}"
 	 
+	 timeout(time: 3, unit: 'MINUTES') {
+		// you can use the commented line if u have specific user group who CAN ONLY approve
+		//input message:'Approve deployment?', submitter: 'it-ops'
+		input message: 'Aprobar el despliegue?'
+     }
+	 
 	 //Descarga la configuración de despliegue a producción desde git
 	 checkout([$class: 'GitSCM', 
 						branches: [[name: '*/master']], 
